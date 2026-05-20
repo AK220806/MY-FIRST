@@ -1,0 +1,282 @@
+html -f
+css-f
+javascipt-b+f
+react - html + javascript (library)
+php- backend
+mysql-(database)
+
+frontend-html,css,angular,react
+backend-node,express,js,
+database- to store datas
+
+
+CSS stands for Cascading style sheets
+
+It used for add colors, change fonts, design webpage
+
+html-for structure
+css- style
+
+3 types of css
+
+1. Inline Css
+2. Internal Css
+3. Externall css
+
+<h1 style="color  :red";>Welcome</h1>
+
+h1- selector
+
+color-property    declaration
+red-value
+
+selector- id, class
+
+id - < p id="Id name"></p>------- #para1{ color: red}
+
+class - <p class="c1"></p> , <h4 class="c1"> -----  .c1 { color:red}
+
+* - > referes to universal selector its will affect full HTML elemnts on the Page
+
+
+Comment tag for css
+
+/*   -----------------  */
+
+Comment tag for HTML
+
+<!--      IUEHFIUHIUF    -->
+
+
+CSS COLOR VALUES
+
+1. rgba(red,green,blue,alpha)
+
+rgb (255,0,255,0-1)
+
+
+16/05/2026
+2. HEX VALUE
+
+#rrggbb - >#ff6347
+
+3. hsl  - hue,staturation,lightness
+h- 0 or 360
+120 - green
+240 - blue
+
+
+CSS BACKGROUNDS
+
+color
+image
+repeat
+attachment
+position
+
+CSS border style
+
+dotted - defines a dotted border
+dashed-  defines a dashed border
+solid - defines a solid border
+double - double border
+groove - 3D grooved border
+ridge
+inset
+outset
+
+hidden
+
+CSS MARGIN
+
+The Css margin properties are used to create space around elements, outside of any defined borders
+
+Margins define the distance between an element's border and the surrounding elements.
+
+Margin properties:
+
+auto- browser calcualtes the margin
+length-specifies a margin in px,cm
+%- specifies a margin in % of the width
+
+margin shorthand( margin : 50px 50px 50px 5opx;)
+
+
+Padding:
+
+The css padding are used to generate space around elemnts content,inside of any defined borders.
+
+Box model:
+
+content
+padding
+border
+margin
+
+Text-alignment
+
+text-align: center
+	left
+	right
+	justify
+
+
+JAVASCRIPT
+
+Javascript is the programming language of the web.
+
+It can calculate, manipulate and validate data.
+
+It can update and chang both HTML and CSS.
+
+getElementById(), getElementByClassName()[EG:<button type="button" onclick="document.getElementById('demo').innerHTML='Java'">Clik me</button>]
+
+javascript variables
+
+java 
+int a=10; 
+
+let:   let a=10; a=10.5; b='String'; c="Arun" s=true;
+
+used to declare a variable
+
+syntax: let variable_name=value;
+
+eg: let age=20;
+      console.log(age);
+
+o/p: 20
+
+Feature:
+
+value can be changed
+
+eg: let name=Arun;
+      name=Arjun;
+
+    console.log(name);
+
+o/p: Arjun
+
+int b=10;
+
+Block Scope
+
+function f(){
+let a=10;
+let b=10;
+console.log(b);
+}
+console.log(b); x
+
+
+Cannot redeclare in same scope
+
+function f(){
+let a=10;
+let a=14;
+console.log(b);
+}
+
+Const
+
+Is used to declare a variable whose value should not be reassigned.
+
+syntax: const variableName=value;
+
+Eg: const pi=3.14;
+console.log(pi);
+
+
+1. value cannot be reassigned
+
+const age=20;
+
+age=21 ; x
+
+2. Must initalize while declaring  
+
+const a;
+a=10; x
+
+
+3. Block scope
+
+const a =10;
+funtion f(){
+
+return a*a
+
+}
+
+console.log(a);x
+
+
+
+
+
+
+
+
+
+
+let a=10;
+JavaScript Identifiers
+
+Variables are identified with unique names called identifiers.
+
+Names can be short like x, y, z.
+
+Names can be descriptive age, sum, carName.
+
+The rules for constructing names (identifiers) are:   let name="arun"   console.log(Name)
+
+Names can contain letters, digits, underscores, and dollar signs.
+Names must begin with a letter, a $ sign or an underscore (_).
+Names are case sensitive (X is different from x).
+Reserved words (JavaScript keywords) cannot be used as names
+
+let const=30;x
+
+let,var,const
+
+	scope	Redeclare 	Reassign
+var	no	Yes		yes
+let 	yes	no		yes
+const	yes	no 		no
+
+Javascript Datatype:
+
+String - "  ",'  '
+Number- 890,23.0,23.90978979
+Boolean- true,false(eg: x=false)          
+Object - eg:const person={firstname:"Arun",lastname:"Kumar"}; ,  array object //const cars=["bmw","safari","audi"]
+null eg: x=null;  ;		
+
+Javascript Operators
+
+1.Assignment operator (=)
+2. Addition Operator (+)
+3. Multiplication Operator(*)
+4.Comparison Operator(<,>,>=,<=)
+
+1. eg: let x=10;
+
+2. eg: let x=10, y=9; let z=x+y; console.log(z);
+
+3. eg: let a=5;b=10;  letc=x*y; console.log(c);
+
+Arithmetic Operators:
+
++ , - , * ,**,/ ,%, ++,--
+
+let x=5;
+x=x+1;  x=x++;
+
+
+javascript conditonal statements
+
+1. if
+2. if-else
+3. if-else if-else
+4. switch

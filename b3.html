@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<p id='demo'>Javascript </p>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Java'">Clik me</button>
+	<button onclick="window.print()">Print</button>
+
+	<script>
+		
+		let x=10;
+		let y=10;
+		let z=x*y;
+
+		document.write(z);
+		console.log(z);
+		console.log("Javascript");
+
+		//alert("Error!");
+
+		let name="arun";
+	    name="arjun";
+		console.log(name);
+
+
+		let x1=2345;
+		if(x1<10){
+			console.log("Its an single digit number");
+
+		}
+		else if(x1<100){
+			console.log("Its an Double digit number");
+		}
+		else
+		{
+			console.log("Some other digits");
+		}
+
+
+		let day='3';
+
+		switch(day)
+		{
+		case '1': console.log("Monday");
+			break;
+		case '2': console.log("Tuesday");
+			break;
+		case '3':console.log("Wednesday");
+			break;
+		default: console.log("Invalid code");
+		}
+	</script>
+</body>
+
+</html>
