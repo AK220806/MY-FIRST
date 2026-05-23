@@ -433,4 +433,65 @@ this is an keyword refers to an object
 
 this is used to access the object that is calling a method
 
+JAVASCRIPT ADVANCED
 
+JAVASCRIPT FUNCTION
+
+call()
+
+The call() method can be used to call a function with a specific this.
+
+The call() method lets an object use a method belonging to another object
+
+Syntax:
+
+functionName.call(this,arg1,agr2,...);
+
+
+apply()
+
+The apply() method is used to call a function with object as an argument
+
+The apply() method takes this as the first argument
+
+The seoncd argument is an array of values passed to the function.
+
+syntax:
+
+functionName.apply(this,[arg1,arg2,..]);
+
+Difference Between call() and apply()
+
+#   The only difference between apply() and call() us how argument are passed
+
+# The call() method takes arguments seperatly
+
+# The apply() method takes arguments as an array
+
+Advanced Objects
+
+Object Iteration
+General Method
+
+1. Object.assign(target,source) => Copies properties from a source object to a target object
+
+2. Object.entries(object) => Retruns an array of the key/value pairs of an object
+
+3.Object.keys(object)=>  Returns an array of the keys of an object
+
+4.Object.values(object)=>Returns an array of the values of an object
+
+
+JAVASCRIPT CLASSES
+
+Javascript classes are template for javascript Object
+
+
+syntax: -> use the keyword class to create a class
+
+class className
+{
+	constructor()
+{
+}
+}
