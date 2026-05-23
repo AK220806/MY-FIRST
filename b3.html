@@ -290,6 +290,137 @@
 
 		console.log(person5.fun());
 
+		//Javascript Advanced 
+		//call() [Normal call()]
+
+		const p1={
+			name:"John"
+		};
+
+		const p2={
+			name:"Sam"
+		};
+
+		const p3={
+			name:"arjun"
+		};
+
+		function greet(greeting)
+		{
+			return greeting+" "+ this.name;
+		}
+
+		console.log(greet("Hello"));
+
+		console.log(greet.call(p3,"Hello"));
+
+		//eg:2 
+
+		const p4={
+			fullName: function(){
+				return this.firstName+ " " +this.lastName;
+			}
+		};
+
+		const p5={
+			firstName:"Arun",
+			lastName:"Kumar"
+		};
+
+		const p6={
+			firstName: "Jerone",
+			lastName: "Abhraham"
+		};
+
+		const o=p4.fullName.call(p6);
+
+		console.log(o);
+
+		//eg: 3 Method from another object (with Argument)
+
+		const p7={
+			full:function(city,country)
+			{
+				return this.firstName+ " " +this.lastName+","+city+","+country;
+			}
+		};
+
+		const p8={
+			firstName:"John",
+			lastName:"Doe"
+		};
+
+		console.log(p7.full.call(p8,"Chennai","India"));
+
+		//apply()
+
+		const p11={
+			name:"john"
+		};
+
+		const p12={
+			name:"Sam"
+		};
+
+		const p13={
+			name:"Arjun"
+		};
+
+
+		function greet1(greeting)
+		{
+			return greeting+ " "+this.name;
+		}
+
+		console.log(greet1.apply(p12,["Hi"]));
+
+		//ef: 2 appply() with arguments
+
+		const v1={
+			firstName:"A",
+			lastName:"K"
+		};
+
+		const v2={
+			full:function(city,country)
+			{
+				return this.firstName+ " "+this.lastName+","+city+","+country;
+			}
+		};
+
+		console.log(v2.full.apply(v1,["Chennai","India"]));
+
+		//Advanced Object [General Objects]
+
+		//Object.assign
+
+		//create Target Object
+
+		const r1={
+			firstName:"John",
+			lastName:"Doe",
+			age:50
+		};
+
+		//Create soruce object
+		const r2={
+			firstName:"Sri",
+			lastName:"Aagash"
+
+		};
+
+		Object.assign(r1,r2);
+
+		console.log(Object.entries(r1));
+
+
+		//Object.keys()
+
+		console.log(Object.keys(r1));
+
+		//Object.values()
+
+		console.log(Object.values(r1));
 
 
 
