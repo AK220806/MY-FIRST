@@ -495,3 +495,51 @@ class className
 {
 }
 }
+
+Eg:
+
+class Car
+{
+	constructor (name,year)
+	{
+		this.name=name;
+		this.year=year;
+	}
+	method1()
+	{
+	}
+	method2()
+	{
+	}
+}
+
+
+ASYNCHRONOUS PROGRAMMING(a,b,c) (a,b-3,c) a,c,b
+
+Async code allows a program to start a long running task and continue with other task before the first one
+
+Async code prevents the application from freezing which is critical for user experience.
+
+Callback function
+
+A callback function is a function passed as an argument into another function
+
+The callback function is intended to be executed later, typically when a specific even occurs or an asynchronous operation completes
+
+
+Promises
+
+A promise object represents the completion or failure of an asynchronous operation 
+
+pending- operation started(not finished)
+reject- operation failed
+fulfilled-operation completed
+
+syntax:
+
+let mypromise=new Promise(function(resolve,reject){
+
+resolve(value);
+
+reject(value):
+});
