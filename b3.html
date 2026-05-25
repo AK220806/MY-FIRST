@@ -422,9 +422,122 @@
 
 		console.log(Object.values(r1));
 
+		//Class constructor
 
+		class Car
+		{
+			constructor(name,year)
+			{
+				this.name=name;
+				this.year=year;
+			}
+			age()
+			{
+				const date=new Date();
+				return date.getFullYear()- this.year;
+			}
+		}
 
+		const mycar=new Car("Ford",2014);
 
+		console.log("My car is"+mycar.age()+"Years old.");
+
+		//eg: 2
+		class Car1
+		{
+			constructor(name1,year)
+			{
+				this.name1=name1;
+				this.year=year;
+			}
+			age1(x)
+			{
+				return x-this.year;
+			}
+		}
+		const date=new Date();
+		let year=date.getFullYear();
+
+		const mycar1=new Car1("Ford",2012);
+		console.log("My car is "+mycar1.age1(year)+" years old.");
+
+		//synchronous
+
+		console.log("A");
+		console.log("B");
+		console.log("C");
+
+		//asynchronous
+
+		console.log("AA");
+
+		setTimeout(()=>{
+			console.log("BB");
+		},3000);
+
+		console.log("CC");
+
+		//callback function
+
+		function greety(name,callback)
+		{
+			console.log("Hello"+name);
+			callback();
+		}
+
+		function demo()
+		{
+			console.log("Greeting completed");
+		}
+
+		greety("Arun",demo);
+
+		//promise
+
+		let promise=new Promise(function(resolve,reject){
+			resolve("Success");
+		});
+
+		promise.then(function(result){
+			console.log(result);
+		});
+
+		//reject
+
+		let promise1=new Promise(function(resolve,reject){
+			reject("Something went wrong");
+		});
+
+		promise1.catch(function(error){
+			console.log(error);
+		});
+
+		//async await
+
+		function data()
+		{
+			return new Promise(function(resolve,reject){
+				let success=true;
+
+				if(success)
+				{
+					resolve("Data loaded");
+				}
+				else
+				{
+					reject("loadng failed");
+				}
+			});
+		}
+
+		async function display()
+		{
+			let result=await data();
+
+			console.log(result);
+		}
+
+		display();
 
 	</script>
 </body>
