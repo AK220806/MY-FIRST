@@ -543,3 +543,112 @@ resolve(value);
 
 reject(value):
 });
+
+
+PHP
+
+PHP-Hypertext preprocessor
+
+Php is a widely-used, open source server-side scripting language
+
+Php scripts are executed on the server
+
+Php files have the file extension .php
+
+php file can contain text,html,css,js,php code
+
+
+Syntax:
+
+<?php
+
+?>
+<?php
+
+?>
+
+Comment line
+
+for single line (# or //)
+
+for multiple line( /* ---  */)
+
+PHP variables
+
+Variables are "containers" for storing information.
+
+A variable can have a short name(like $x and $y)or a more descriptive name($age, $carname)
+
+Rules for PHP variables:
+	* A variable must start with the $ sign, follwed by the name of the varible
+	* A variable must start with a letter or the underscore character.
+	*  A variable name cannot start with a number
+	* A variable name can only contatins alphanumeric characters and underscores (A-z, 0-9  and _)
+	* Variable names are case-senstive($age and $AGE are two different variables)
+
+Eg: $x=5;
+      $name="John";
+
+echo can take multiple parameters , while print can take only one argument
+
+echo "hello";
+
+echo("hello");
+
+DATA TYPES:
+
+String-text values
+int- whole numbers
+float- decimal numbers
+bool-true or false
+array- sequence of similar datatypes
+
+var_dump()
+
+STRING FUNCTION
+
+1. strlen()
+
+its retruns the length of a string
+
+2. str_word_count()
+
+its counts the number of words in a string
+
+3. str_contains()
+
+checks if a string contains a specific substring
+
+4. str_starts_with()
+
+its checks if a string starts with a specific substring
+
+5. str_ends_with()
+
+its checks if a string ends with a specific substring
+
+MODIFY STRING METHODS
+
+1. strupper()
+
+returns a string in uppercase
+
+2. strlower()
+
+retruns a string in lowercase
+
+3. str_replace()
+
+replaces some characters with some other characters in a string
+
+4. strrev()
+
+reverse a string
+
+5. trim()
+
+removes any whitespaces from the beginning or the end
+
+CONCATENATE STRING
+
+. OPERATOR 
